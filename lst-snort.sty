@@ -1,0 +1,21 @@
+%Author: Christian Zei
+
+\lstdefinelanguage{Snort}{
+	morekeywords=[1]{tcp, udp, icmp, ip},
+	morekeywords=[2]{alert, log, pass, activate, dynamic, drop, reject, sdrop, ->, msg, reference, gid, content, protected\_content, hash, length, nocase, rawbytes, depth, offset, distance, within, priority, metadata, flow, classtype, sid, rev, http\_client\_body, http\_cookie, http\_header, http\_raw\_header, http\_method, http\_uri, http\_raw\_uri, http\_stat\_code, http\_stat\_msg, fast\_pattern, uricontent, urilen, isdataat, pcre, pkt\_data, file\_data, base64\_decode, base64\_data, byte\_test, byte\_jump, byte\_extract, byte\_math, ftpbounce, asn1, cvs, dce\_iface, dce\_opnum, dce\_stub\_data, sip\_method, sip\_stat\_code, sip\_header, sip\_body, gtp\_type, gtp\_info, gtp\_version, ssl\_version, ssl\_state, fragoffset, ttl, tos, id, ipopts, fragbits, dsize, flags, flow, flowbits, seq, ack, window, itype, icode, icmp\_id, icmp\_seq, rpc, ip\_proto, sameip, stream\_reassemble, stream\_size, logto, session, resp, react, tag, activates, activated\_by, count, replace, detection\_filter, threshold},
+	alsoletter=->\$,
+	keywordsprefix=\$,
+	sensitive=false,
+	morecomment=[l]{\#},
+	morestring=[b]",
+	showstringspaces=false,
+	basicstyle=\small\ttfamily,
+	keywordstyle=[2]\bf\ttfamily\color[rgb]{1, 0.65, 0}, %yellow
+	keywordstyle=[1]\bf\ttfamily\color[rgb]{0,0.6,0}, %green
+	commentstyle=\color[rgb]{0.5,0.5,0.5}, %gray
+	stringstyle=\color[rgb]{0.58,0,0.82}, %purple
+	upquote=true,
+	breaklines=true,
+	breakatwhitespace=true,
+}
+

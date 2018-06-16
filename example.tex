@@ -1,0 +1,20 @@
+    \documentclass{article}
+    \usepackage{listings}
+    \usepackage{color}
+    \usepackage{textcomp}
+    
+    \lstset{
+      language=Snort
+    }
+    
+    \begin{document}
+    
+    \title{A LaTeX Listing in \LaTeX}
+    \date{\today}
+    \maketitle
+    
+    \begin{lstlisting}
+	    alert tcp any any -> any any (msg:"A TCP message was detected."; sid:100001)
+    \end{lstlisting}
+    
+	\end{document}
