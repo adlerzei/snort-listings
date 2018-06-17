@@ -15,7 +15,7 @@ LaTeX Code:
     
     \begin{document}
     
-    \title{A LaTeX Listing in \LaTeX}
+    \title{A Snort Listing in \LaTeX}
     \date{\today}
     \maketitle
     
